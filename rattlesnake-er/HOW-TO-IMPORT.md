@@ -26,10 +26,15 @@ the notes on those pins for the nearest real option.
 1. On a computer, go to **https://www.google.com/mymaps** and click **Create a new map**.
 2. Click **Import** under the layer name.
 3. Upload **`rattlesnake-er-colorado.csv`** (from this folder).
-4. When asked which columns to position the pins by, choose **`Address`**.
+4. When asked which columns to position the pins by, choose **`MapLocation`** ⭐
+   (this column has the clinic name + clean address, which Google geocodes most
+   reliably — do NOT pick `Address`, which keeps suite numbers that can trip up geocoding).
 5. When asked which column to title the markers, choose **`Name`**.
 6. Rename the map something like **"🐍 Rattlesnake ER — CO"** and (optional) style pins
    by the **`Priority`** column so true-24/7 clinics stand out.
+7. After import, check the layer says **"32 features."** If Google reports any rows
+   "could not be drawn," click that notice — it lists which addresses to fix by hand
+   (usually just re-type the street into the search box for that pin).
 
 ### To get it on your phone
 Open the **Google Maps app → Saved → Maps tab** → your new map appears there.
